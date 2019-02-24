@@ -25,7 +25,8 @@ ActiveRecord::Schema.define(version: 2019_02_04_211103) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
-    t.integer "pot"
+    t.integer "pot", default: 100
+    t.integer "longest_streak", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

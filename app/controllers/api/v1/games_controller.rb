@@ -1,12 +1,17 @@
 class Api::V1::GamesController < ApplicationController
 
+  def index
+    @games = Games.all
+    render json: @games 
+  end
+
   def create
     @game = Game.create(game_params)
     if @game.valid?
       render json: { game: GamesSerializer.new(@game)}, status: :accepted
     else
       render json: { errors: @game.errors.full_messages }
-    end 
+    end
   end
 
   private

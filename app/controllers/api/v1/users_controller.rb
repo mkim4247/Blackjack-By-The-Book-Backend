@@ -48,7 +48,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:username, :password, :email, :pot, :longest_streak)
+    params.require(:user).permit(:username, :password, :email, :pot, :longest_streak, :largest_pot)
   end
 
 end

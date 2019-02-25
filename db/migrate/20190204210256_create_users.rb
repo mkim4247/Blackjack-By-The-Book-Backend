@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :username
       t.string :password_digest
       t.integer :pot, default: 100
+      t.integer :current_streak, default: 0
       t.integer :longest_streak, default: 0
       t.integer :largest_pot, default: 100
       t.timestamps

@@ -17,7 +17,18 @@ class Api::V1::AuthController < ApplicationController
     end
   end
 
-  private 
+  def guest
+    @user = User.find_by(username: "Guest")
+    @user.update(pot: 100)
+    render json: {
+      message: "guest valid",
+      user_info: @user,
+      error: false,
+      token: encode({ user_id: @user.id })
+    }, status: :accepted
+  end
+
+  private
 
   def login_params
     params.require(:user).permit(:username, :password)

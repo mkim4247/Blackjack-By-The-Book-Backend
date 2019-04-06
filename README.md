@@ -4,7 +4,7 @@ Blackjack By the Book was created to help teach basic blackjack strategy and let
 The backend was developed on Ruby 2.5.1 and Rails 5.2.2, and uses Active Model Serializers and a PostgreSQL Database. Once you've created and migrated the database, you will need to seed it with the "Guest" User (already in the seeds.rb rile); this is necessary so that players can sign in as a guest. For basic auth, BCrypt and JWT were used as well.
 
 The frontend repo can be found here:
-https://github.com/mkim4247/blackjack-react-frontend
+https://github.com/mkim4247/Blackjack-By-The-Book-Frontend
 
 Below is a demo of the app:
 https://www.youtube.com/watch?v=MOIH7OmbQs4

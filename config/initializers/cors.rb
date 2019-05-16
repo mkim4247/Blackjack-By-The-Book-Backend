@@ -7,8 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://blackjack-by-the-book-frontend.herokuapp.com/', 'https://blackjack-by-the-book-frontend.herokuapp.com/login',
-    'https://blackjack-by-the-book-frontend.herokuapp.com/new'
+    origins 'https://blackjack-by-the-book-frontend.herokuapp.com/'
 
     resource '*',
       headers: :any,

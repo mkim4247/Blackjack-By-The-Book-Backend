@@ -8,3 +8,6 @@ https://github.com/mkim4247/Blackjack-By-The-Book-Frontend
 
 Below is a demo of the app:
 https://www.youtube.com/watch?v=MOIH7OmbQs4
+
+A live version of the app can be found here:
+https://blackjack-by-the-book.herokuapp.com/
